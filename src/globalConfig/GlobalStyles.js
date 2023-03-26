@@ -60,8 +60,84 @@ const GlobalStyle = createGlobalStyle`
 
   /* END OF RESET */
 
-  /* MOBILE FIRST DEFAULT STYLES */
+  /* GLOBAL DEFAULTS */
+  html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  /* END GLOBAL DEFAULTS */
+
+  /* MOBILE FIRST DEFAULT STYLES */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
   /* Min width of 375 */
     ${media.iphoneSe `
       
@@ -79,22 +155,124 @@ const GlobalStyle = createGlobalStyle`
 
   /* Min width of 768 */
     ${media.tablet `
-      
+
+      // Font Sizes
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    
+      h3 {
+        font-size: 1.75rem;
+      }
+    
+      h4 {
+        font-size: 1.5rem;
+      }
+    
+      h5 {
+        font-size: 1.5rem;
+      }
+    
+      h6 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     `}
 
   /* Min width of 1024 */
     ${media.desktop `
+      // Font Sizes
+      h1 {
+        font-size: 2.5rem;
+      }
       
+      h2 {
+        font-size: 2.25rem;
+      }
+    
+      h3 {
+        font-size: 2rem;
+      }
+    
+      h4 {
+        font-size: 1.75rem;
+      }
+    
+      h5 {
+        font-size: 1.75rem;
+      }
+    
+      h6 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
     `}
 
   /* Min width of 1200 */
     ${media.widescreen `
+
+    // Font Sizes
+      h1 {
+        font-size: 3rem;
+      }
       
+      h2 {
+        font-size: 2.75rem;
+      }
+    
+      h3 {
+        font-size: 2.5rem;
+      }
+    
+      h4 {
+        font-size: 2.25rem;
+      }
+    
+      h5 {
+        font-size: 2.25rem;
+      }
+    
+      h6 {
+        font-size: 2.25rem;
+      }
     `}
 
   /* Min width of 1980 */
     ${media.udh `
-      
+    
+    // Font Sizes
+      h1 {
+        font-size: 3.5rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    
+      h3 {
+        font-size: 2.75rem;
+      }
+    
+      h4 {
+        font-size: 2.5rem;
+      }
+    
+      h5 {
+        font-size: 2.5rem;
+      }
+    
+      h6 {
+        font-size: 2.5rem;
+      }
     `}
 `
 
