@@ -9,12 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2023-03-26
 
 ### Added
+./src/components/layouts/SidebarLayout
+  - Added Layout with sidebar
 ### Changed
 ./package.json
   - Updated all packages
   - Updated project info
 ./README.md
   - Added instructions for maintenence on the template
+./src/globalConfig/GlobalStyles
+  - Added default font styles
 
 #### Package updates:
 Webpack Upgrde v5.74.0 => v5.76.3

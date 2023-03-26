@@ -6,10 +6,6 @@ const StyledApp = styled.section`
 /* MOBILE FIRST DEFAULT STYLES */
   max-width: 100%;
 
-  header {
-    grid-area: header;
-  }
-
   #sidebarWrap {
     grid-area: sidebar;
   }
@@ -22,15 +18,7 @@ const StyledApp = styled.section`
     grid-area: footer;
   }
 
-  // Styles for Styled app #container
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "header header header header"
-  "sidebar content content content"
-  "footer footer footer footer";
-  
+
 
 /* Min width of 375 */
   ${media.iphoneSe `
@@ -49,6 +37,7 @@ const StyledApp = styled.section`
 
 /* Min width of 768 */
   ${media.tablet `
+
   `}
 
 /* Min width of 1024 */
