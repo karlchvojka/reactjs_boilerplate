@@ -50,6 +50,7 @@ module.exports = {
       elements: path.resolve(__dirname, './src/components/elements'),
       globalAssets: path.resolve(__dirname, './src/globalAssets'),
       globalConfig: path.resolve(__dirname, './src/globalConfig'),
+      layouts: path.resolve(__dirname, './src/components/layouts'),
       modules: path.resolve(__dirname, './src/components/modules'),
       pages: path.resolve(__dirname, './src/components/pages'),
       templates: path.resolve(__dirname, './src/components/templates'),
