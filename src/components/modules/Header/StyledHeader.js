@@ -2,10 +2,16 @@
 import styled from 'styled-components'
 import media from 'globalConfig/mobile'
 
-const StyledHeader = styled.section`
+const StyledHeader = styled.header`
 /* MOBILE FIRST DEFAULT STYLES */
-  border: 1px solid #000;
+
+  border-bottom: 1px solid #000;
+  padding: 10px 14px;
   width: 100%;
+
+  p {
+    text-align: center; 
+  }
 
 
 /* Min width of 375 */

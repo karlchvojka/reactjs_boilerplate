@@ -10,7 +10,7 @@ import StyledHeader from './StyledHeader'
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>The Template 2022</h1>
+      <p>The Template 2022</p>
     </StyledHeader>
   )
 }
