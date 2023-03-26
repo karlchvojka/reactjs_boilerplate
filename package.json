@@ -10,7 +10,7 @@
     "build": "webpack --mode production"
   },
   "author": "Karl Chvojka",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
