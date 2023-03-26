@@ -5,7 +5,7 @@ import React from 'react'
 import StyledFooter from './StyledFooter'
 
 /**
- * This the Header component.
+ * This the Footer component.
  */
 const Footer = () => {
   return (

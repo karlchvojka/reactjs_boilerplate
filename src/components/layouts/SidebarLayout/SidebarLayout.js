@@ -5,7 +5,11 @@ import React from 'react'
 import StyledSidebarLayout from './StyledSidebarLayout'
 
 /**
- * This the Header component.
+ * This the SidebarLayout component.
+ * 
+ * Its purpose is to give an example of a layout with:
+ * - Sidebar on the left
+ * - Single Content area on the right
  */
 const SidebarLayout = () => {
   return (
