@@ -1,16 +1,16 @@
-# ReactJS Template 2022
+# ReactJS Template 2023
 This is a CRA Alternative to be used to bootstrap new projects.  
 
 ## Requirements
-Make sure you are running the following:  
-Node v18.7.0+  
-Npm v8.15.0+
+This template is currently only tested with the following versions: 
+Node v19.8.1+  
+Npm v9.6.2+
 
 ## Packages installed and configured
 As this is a template, only the basics are installed:
 
 - ReactJS v18.2.0
-- Webpack v5.74.0
+- Webpack v5.76.3
 - Babel v7.18.10
 
 ## Getting started

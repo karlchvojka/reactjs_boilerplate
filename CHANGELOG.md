@@ -102,3 +102,9 @@ Note: #3 was done first to establish folder/file settings for the mobile setup
 #### #6
 - Removed /cypress folder
 
+## [2.0.0] - 2023-03-26
+
+### Added
+### Changed
+#### Package updates:
+Webpack Upgrde v5.74.0 => v5.76.3
