@@ -7,23 +7,8 @@ import { defaultColors } from 'globalConfig/colors'
 
 const StyledSidebarLayout = styled.section`
 /* MOBILE FIRST DEFAULT STYLES */
-  
-
-  #sidebarWrap {
-    grid-area: sidebar;
-  }
-
-  #contentWrap {
-    grid-area: content;
-  }
-
   border: 1px solid ${defaultColors.cyberBlue};
   border-top: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "sidebar content content content";
   max-width: 100%;
   padding: 20px 24px;
 

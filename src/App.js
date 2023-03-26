@@ -6,7 +6,7 @@ import Header from 'modules/Header/Header'
 import Footer from 'modules/Footer/Footer'
 
 // Component Imports
-import SidebarLayout from 'layouts/SidebarLayout/SidebarLayout'
+import ColumnLayout from 'layouts/ColumnLayout/ColumnLayout'
 
 // CSS Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
@@ -17,7 +17,9 @@ const App = () => {
     <StyledApp id='container'>
       <GlobalStyle />
       <Header id='headerWrap' />
-      <SidebarLayout />
+      <ColumnLayout 
+        headlineText='ReactJS Basic Template 2023'
+      />
       <Footer />
     </StyledApp>
   )
