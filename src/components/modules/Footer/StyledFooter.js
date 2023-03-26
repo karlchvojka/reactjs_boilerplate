@@ -5,16 +5,16 @@ import media from 'globalConfig/mobile'
 // Variable Imports
 import { defaultColors } from 'globalConfig/colors'
 
-const StyledHeader = styled.header`
+const StyledFooter = styled.footer`
 /* MOBILE FIRST DEFAULT STYLES */
 
-  border-bottom: 1px solid ${defaultColors.cyberBlue};
+  border-top: 1px solid ${defaultColors.cyberBlue};
+  bottom: 0;
+  left: 0;
   padding: 10px 14px;
+  position: fixed;
   max-width: 100%;
-
-  p {
-    text-align: center; 
-  }
+  min-width: 100%;
 
 
 /* Min width of 375 */
@@ -53,4 +53,4 @@ const StyledHeader = styled.header`
   `}
 `
 
-export default StyledHeader
+export default StyledFooter

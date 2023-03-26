@@ -3,6 +3,7 @@ import React from 'react'
 
 // Library Imports
 import Header from 'modules/Header/Header'
+import Footer from 'modules/Footer/Footer'
 
 // Component Imports
 import SidebarLayout from 'layouts/SidebarLayout/SidebarLayout'
@@ -17,7 +18,7 @@ const App = () => {
       <GlobalStyle />
       <Header id='headerWrap' />
       <SidebarLayout />
-      <footer><p>&copy; 2023 - Karl Chvojka</p></footer>
+      <Footer />
     </StyledApp>
   )
 }

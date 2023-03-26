@@ -2,6 +2,9 @@
 import { createGlobalStyle } from 'styled-components'
 import media from 'globalConfig/mobile'
 
+// Variable Imports
+import { defaultColors } from './colors'
+
 const GlobalStyle = createGlobalStyle`  
   /*
     START OF RESET
@@ -62,9 +65,14 @@ const GlobalStyle = createGlobalStyle`
 
   /* GLOBAL DEFAULTS */
   html {
+    color: ${defaultColors.cyberBlue};
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  body {
+    background-color: ${defaultColors.darkGrey};
   }
 
   h1 {
@@ -103,6 +111,15 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     font-size: 1rem;
+  }
+
+  a:link, a:visited {
+    color: ${defaultColors.orange};
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: ${defaultColors.cyberBlue};
   }
 
   /* END GLOBAL DEFAULTS */
