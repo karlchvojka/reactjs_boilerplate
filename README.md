@@ -5,8 +5,11 @@ This repo is to be used as a boilerplate setup for ReactJS.
 ---
 To allow getting going on app development faster.
 
-## Branches:
----
+## FLAVORS:
+ReactJS Base: [reactjs_base/main](https://github.com/karlchvojka/reactjs_template/tree/main)\
+ReactJS + Typescript: [reactjs_ts/main](https://github.com/karlchvojka/reactjs_template/tree/reactjs_ts/main)
+
+
 ### Main
 Main branch is for administration of the repo over all.
 Just includes this README and the CHANGELOG for the entire repo.

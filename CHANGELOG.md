@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Created reactjs_base/main branch
+- Created reactjs_ts/main branch
+
 ### Changed
 - Updated Readme and Changelog to reflect the seperation.
 
