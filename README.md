@@ -1,28 +1,62 @@
-# ReactJS Template 2022
+# ReactJS Template 2023
 This is a CRA Alternative to be used to bootstrap new projects.  
 
 ## Requirements
-Make sure you are running the following:  
-Node v18.7.0+  
-Npm v8.15.0+
+---
+
+This template is currently only tested with the following versions:
+
+- Node v19.8.1+  
+- Npm v9.6.2+
 
 ## Packages installed and configured
+---
+
 As this is a template, only the basics are installed:
 
 - ReactJS v18.2.0
-- Webpack v5.74.0
-- Babel v7.18.10
+- Webpack v5.76.3
+- Babel v7.21.0
+- Eslint: v8.36.0
+- Styled-Components: v5.3.9
+- Jest: v29.5.0
+- React-Testing-Library: v14.0.0
 
 ## Getting started
+---
 Fork repo into a directory, and cd into it.
 
-### Installing
-Run `npm install`
+### Installing:
+```
+npm install
+```
 
-### Starting the app
-Run `npm start`
+### Starting the app:
+```
+npm start
+```
 
-This will start the app, via webpack, open your default browser, and serve it to [http://localhost:9500](http://localhost:9500)
+This will start the app, via webpack, open your default browser, and serve it to [http://localhost:3000](http://localhost:3000)
 
-### Building the app
-Run `npm run build`
+### Building the app:
+```
+npm run build
+```
+
+## Maintenence:
+---
+
+To check for updates in npm use npm-check-updates [Install Instructions](https://flaviocopes.com/update-npm-dependencies/)
+
+Run npm-check-updates
+```
+ncu -u
+```
+
+Follow directions.
+
+## Running Tests:
+---
+```
+npm test
+```

@@ -2,10 +2,19 @@
 import styled from 'styled-components'
 import media from 'globalConfig/mobile'
 
-const StyledHeader = styled.section`
+// Variable Imports
+import { defaultColors } from 'globalConfig/colors'
+
+const StyledHeader = styled.header`
 /* MOBILE FIRST DEFAULT STYLES */
-  border: 1px solid #000;
-  width: 100%;
+
+  border-bottom: 1px solid ${defaultColors.cyberBlue};
+  padding: 10px 14px;
+  max-width: 100%;
+
+  p {
+    text-align: center; 
+  }
 
 
 /* Min width of 375 */

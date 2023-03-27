@@ -2,22 +2,20 @@
 import styled from 'styled-components'
 import media from 'globalConfig/mobile'
 
-const StyledApp = styled.section`
+// Variable Imports
+import { defaultColors } from 'globalConfig/colors'
+
+const StyledFooter = styled.footer`
 /* MOBILE FIRST DEFAULT STYLES */
+
+  background-color: ${defaultColors.darkGrey};
+  border-top: 1px solid ${defaultColors.cyberBlue};
+  bottom: 0;
+  left: 0;
+  padding: 10px 14px;
+  position: fixed;
   max-width: 100%;
-
-  #sidebarWrap {
-    grid-area: sidebar;
-  }
-
-  #contentWrap {
-    grid-area: content;
-  }
-
-  footer {
-    grid-area: footer;
-  }
-
+  min-width: 100%;
 
 
 /* Min width of 375 */
@@ -37,7 +35,7 @@ const StyledApp = styled.section`
 
 /* Min width of 768 */
   ${media.tablet `
-
+    
   `}
 
 /* Min width of 1024 */
@@ -56,4 +54,4 @@ const StyledApp = styled.section`
   `}
 `
 
-export default StyledApp
+export default StyledFooter

@@ -3,6 +3,10 @@ import React from 'react'
 
 // Library Imports
 import Header from 'modules/Header/Header'
+import Footer from 'modules/Footer/Footer'
+
+// Component Imports
+import ColumnLayout from 'layouts/ColumnLayout/ColumnLayout'
 
 // CSS Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
@@ -10,10 +14,13 @@ import StyledApp from './StyledApp'
 
 const App = () => {
   return (
-    <StyledApp>
+    <StyledApp id='container'>
       <GlobalStyle />
-      <Header />
-      <h1>Welcome to React App thats build using Webpack and Babel separately</h1>
+      <Header id='headerWrap' />
+      <ColumnLayout 
+        headlineText='ReactJS Basic Template 2023'
+      />
+      <Footer />
     </StyledApp>
   )
 }
