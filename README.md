@@ -1,5 +1,5 @@
-# ReactJS Template 2023
-This is a CRA Alternative to be used to bootstrap new projects.  
+# ReactJS + Typescript
+A simple ReactJS + Typescript boilerplate
 
 ## Requirements
 ---
