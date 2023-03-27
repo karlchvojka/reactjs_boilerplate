@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2023-03-26
 
 ### Added
+./src/App.test.js
+  - Implemented basic render test
 ./src/components/layouts/SidebarLayout
   - Added Layout with sidebar
 ### Changed
@@ -38,6 +40,14 @@ html-loader                        ^4.1.0  →   ^4.2.0
 styled-components                  ^5.3.5  →   ^5.3.9
 webpack-cli                       ^4.10.0  →   ^5.0.1
 webpack-dev-server                 ^4.9.3  →  ^4.13.1
+
+#### Package Installs:
+@testing-library/jest-dom: ^5.16.5,
+@testing-library/react: ^14.0.0,
+babel-jest: ^29.5.0,
+jest: ^29.5.0,
+jest-environment-jsdom: ^29.5.0,
+react-test-renderer: ^18.2.0,
 
 ## [0.0.4] - 2022-08-29
 Issue fixing
