@@ -19,6 +19,8 @@ As this is a template, only the basics are installed:
 - Babel v7.21.0
 - Eslint: v8.36.0
 - Styled-Components: v5.3.9
+- Jest: v29.5.0
+- React-Testing-Library: v14.0.0
 
 ## Getting started
 ---
@@ -36,12 +38,12 @@ npm start
 
 This will start the app, via webpack, open your default browser, and serve it to [http://localhost:3000](http://localhost:3000)
 
-### Building the app
+### Building the app:
 ```
 npm run build
 ```
 
-## Maintenence
+## Maintenence:
 ---
 
 To check for updates in npm use npm-check-updates [Install Instructions](https://flaviocopes.com/update-npm-dependencies/)
@@ -52,3 +54,9 @@ ncu -u
 ```
 
 Follow directions.
+
+## Running Tests:
+---
+```
+npm test
+```
