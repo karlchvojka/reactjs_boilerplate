@@ -1,3 +1,19 @@
+# REPO NOTES:
+This repo is to be used as a boilerplate setup for ReactJS.
+
+## Purpose:
+---
+To allow getting going on app development faster.
+
+## Branches:
+---
+### Main
+Main branch is for administration of the repo over all.
+
+## Usage Notes:
+---
+If you are using this repo for a project, choose the template you want, find the corresponding branch, and branch off of that.
+
 # ReactJS Template 2023
 This is a CRA Alternative to be used to bootstrap new projects.  
 
