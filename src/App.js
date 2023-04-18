@@ -1,12 +1,10 @@
 // Framework Imports
 import React from 'react'
 
-// Library Imports
-import Header from 'modules/Header/Header'
-import Footer from 'modules/Footer/Footer'
-
 // Component Imports
 import ColumnLayout from 'layouts/ColumnLayout/ColumnLayout'
+import Footer from 'modules/Footer/Footer'
+import Header from 'modules/Header/Header'
 
 // CSS Imports
 import GlobalStyle from 'src/globalConfig/GlobalStyles'
