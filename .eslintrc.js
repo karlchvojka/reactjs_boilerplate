@@ -23,8 +23,22 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     indent: ['error', 2],
     'arrow-body-style': ['error', 'always'],
+    'linebreak-style': 0,
     quotes: ['error', 'single'],
-    'jsx-a11y/no-static-element-interactions': ['always'],
+    'jsx-a11y/no-static-element-interactions': [
+      'error',
+      {
+        handlers: [
+          'onClick',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+      },
+      2,
+    ],
   },
   settings: {
     react: {
