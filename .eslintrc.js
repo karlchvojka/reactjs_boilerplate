@@ -25,21 +25,6 @@ module.exports = {
     'arrow-body-style': ['error', 'always'],
     'linebreak-style': 0,
     quotes: ['error', 'single'],
-    'jsx-a11y/no-static-element-interactions': [
-      'error',
-      {
-        handlers: [
-          'onClick',
-          'onMouseDown',
-          'onMouseUp',
-          'onKeyPress',
-          'onKeyDown',
-          'onKeyUp',
-        ],
-      },
-      2,
-    ],
-  },
   settings: {
     react: {
       version: 'detect',
