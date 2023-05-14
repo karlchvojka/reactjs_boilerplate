@@ -1,8 +1,9 @@
 // Framework Imports
+import React from 'react'
 import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
 
 // Component Imports
-
 import App from './App'
 
 /**
@@ -10,13 +11,13 @@ import App from './App'
  * - Renders basic landing page
  * - Checks for header with the text "ReactJS Basic Template"
  */
-test('renders the landing page', async () => {
+test('renders learn react link', () => {
   // Render App
   render(<App />)
 
-  // Asyncronously extract header with new text
-  const header = await screen.findByText('ReactJS Basic Template 2023')
+  // Find the H1 Text in the component
+  const linkElement = screen.getByText(/ReactJS Basic Template 2023/i)
 
-  // Assert header to have text.
-  expect(header).toBeInTheDocument();
+  // Assert the text exists
+  expect(linkElement).toBeInTheDocument()
 })

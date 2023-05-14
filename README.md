@@ -17,7 +17,7 @@ As this is a template, only the basics are installed:
 - ReactJS v18.2.0
 - Webpack v5.76.3
 - Babel v7.21.0
-- Eslint: v8.36.0
+- Eslint: v8.40.0
 - Styled-Components: v5.3.9
 - Jest: v29.5.0
 - React-Testing-Library: v14.0.0

@@ -7,38 +7,39 @@ const GlobalStyle = createGlobalStyle`
 /* MOBILE FIRST DEFAULT STYLES */
 
 /* Min width of 375 */
-  ${media.iphoneSe `
+  ${media.iphoneSe`
     
   `}
 
 /* Min width of 414 */
-  ${media.iphoneXr `
+  ${media.iphoneXr`
     
   `}
 
 /* Min width of 576 */
-  ${media.landscapePhones `
+  ${media.landscapePhones`
     
   `}
 
 /* Min width of 768 */
-  ${media.tablet `
+  ${media.tablet`
     
   `}
 
 /* Min width of 1024 */
-  ${media.desktop `
+  ${media.desktop`
     
   `}
 
 /* Min width of 1200 */
-  ${media.widescreen `
+  ${media.widescreen`
     
   `}
 
 /* Min width of 1980 */
-  ${media.udh `
+  ${media.udh`
     
   `}
 
 `
+export default GlobalStyle

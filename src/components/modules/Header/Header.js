@@ -7,12 +7,10 @@ import StyledHeader from './StyledHeader'
 /**
  * This the Header component.
  */
-const Header = () => {
-  return (
-    <StyledHeader>
-      <p>ReactJS Basic Template</p>
-    </StyledHeader>
-  )
-}
+const Header = () => (
+  <StyledHeader>
+    <p>ReactJS Basic Template</p>
+  </StyledHeader>
+)
 
 export default Header
