@@ -1,47 +1,71 @@
+const path = require('path')
+
 module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
+    jest: true
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings'
   ],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: [
     'react',
+    'react-hooks',
+    'testing-library'
   ],
   rules: {
+    'comma-dangle': ['error', 'never'],
     semi: ['error', 'never'],
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     indent: ['error', 2],
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': ['error', 'as-needed'],
     'linebreak-style': 0,
-    quotes: ['error', 'single'],
+    'jsx-quotes': ['error', 'prefer-single'],
+    'import/prefer-default-export': [
+      ('off' || 'warn' || 'error'),
+      { target: 'any' }
+    ]
+  },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react']
+    }
+  ],
   settings: {
     react: {
-      version: 'detect',
+      version: 'detect'
+    },
+    jest: {
+      // eslint-disable-next-line
+      version: require('jest/package.json').version
     },
     'import/resolver': {
       alias: {
         map: [
-          ['src', './src'],
-          ['public', './public'],
-          ['elements', './src/components/elements'],
-          ['globalAssets', './src/globalAssets'],
-          ['globalConfig', './src/globalConfig'],
-          ['modules', './src/components/modules'],
-          ['layouts', './src/components/layouts'],
-        ],
-        extensions: ['.ts', '.js', '.jsx', '.json'],
-      },
-    },
-  },
+          ['src', path.resolve(__dirname, 'src/')],
+          ['globalAssets', path.resolve(__dirname, 'src/globalAssets')],
+          ['globalConfig', path.resolve(__dirname, 'src/globalConfig')],
+          ['layouts', path.resolve(__dirname, 'src/components/layouts')],
+          ['modules', path.resolve(__dirname, 'src/components/modules')]
+        ]
+      }
+    }
+  }
 }

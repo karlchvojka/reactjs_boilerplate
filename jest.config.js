@@ -1,5 +1,4 @@
-/** @type {import('jest').Config} */
-const { defaults } = require('jest-config');
+const { defaults } = require('jest-config')
 
 const config = {
   verbose: true,
@@ -10,10 +9,10 @@ const config = {
     'globalAssets/(.*)': '<rootDir>/src/globalAssets/$1',
     'globalConfig/(.*)': '<rootDir>/src/globalConfig/$1',
     'layouts/(.*)': '<rootDir>/src/components/layouts/$1',
-    'modules/(.*)':  '<rootDir>/src/components/modules/$1'
+    'modules/(.*)': '<rootDir>/src/components/modules/$1'
   },
   setupFilesAfterEnv: ['<rootDir>/setup-jest.js'],
-  testEnvironment: 'jsdom',
-};
+  testEnvironment: 'jsdom'
+}
 
-module.exports = config;
+module.exports = config
