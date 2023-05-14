@@ -2,16 +2,17 @@
 const path = require('path')
 
 // Plugin Library Imports
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  /** 
+  /**
    * Sets the entry point for the app post build.
    * Configured entry for the index.js file.
    */
   entry: {
-    main: path.resolve(__dirname, './index.js'),
+    main: path.resolve(__dirname, './index.js')
   },
 
   /**
@@ -19,7 +20,7 @@ module.exports = {
    */
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.js'
   },
 
   target: 'web',
@@ -29,7 +30,7 @@ module.exports = {
    */
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, 'dist')
     },
     open: true,
     hot: true,
@@ -44,17 +45,15 @@ module.exports = {
      * Configuration of aliases.
      */
     alias: {
-      path: require.resolve('path-browserify'),
       public: path.resolve(__dirname, './public'),
       src: path.resolve(__dirname, './src'),
-      elements: path.resolve(__dirname, './src/components/elements'),
       globalAssets: path.resolve(__dirname, './src/globalAssets'),
       globalConfig: path.resolve(__dirname, './src/globalConfig'),
       layouts: path.resolve(__dirname, './src/components/layouts'),
       modules: path.resolve(__dirname, './src/components/modules')
     },
 
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json']
   },
   module: {
 
@@ -65,35 +64,35 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: 'babel-loader'
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           }
         ]
       }
-    ],
+    ]
   },
 
   /**
    * Plugin configurations.
    */
-   plugins: [
-    
+  plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: 'index.html', // output file
-    })
+      filename: 'index.html' // output file
+    }),
+    new ESLintPlugin()
   ]
 }

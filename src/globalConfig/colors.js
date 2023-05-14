@@ -4,4 +4,4 @@ const defaultColors = {
   orange: '#DE6F00'
 }
 
-export { defaultColors }
+export default defaultColors

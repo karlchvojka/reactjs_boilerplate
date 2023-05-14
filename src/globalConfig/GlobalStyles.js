@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 import media from 'globalConfig/mobile'
 
 // Variable Imports
-import { defaultColors } from './colors'
+import defaultColors from './colors'
 
 const GlobalStyle = createGlobalStyle`  
   /*
@@ -156,22 +156,22 @@ const GlobalStyle = createGlobalStyle`
     font-size: 0.9rem;
   }
   /* Min width of 375 */
-    ${media.iphoneSe `
+    ${media.iphoneSe`
       
     `}
 
   /* Min width of 414 */
-    ${media.iphoneXr `
+    ${media.iphoneXr`
       
     `}
 
   /* Min width of 576 */
-    ${media.landscapePhones `
+    ${media.landscapePhones`
       
     `}
 
   /* Min width of 768 */
-    ${media.tablet `
+    ${media.tablet`
 
       // Font Sizes
       h1 {
@@ -204,7 +204,7 @@ const GlobalStyle = createGlobalStyle`
     `}
 
   /* Min width of 1024 */
-    ${media.desktop `
+    ${media.desktop`
       // Font Sizes
       h1 {
         font-size: 2.5rem;
@@ -236,7 +236,7 @@ const GlobalStyle = createGlobalStyle`
     `}
 
   /* Min width of 1200 */
-    ${media.widescreen `
+    ${media.widescreen`
 
     // Font Sizes
       h1 {
@@ -265,7 +265,7 @@ const GlobalStyle = createGlobalStyle`
     `}
 
   /* Min width of 1980 */
-    ${media.udh `
+    ${media.udh`
     
     // Font Sizes
       h1 {
