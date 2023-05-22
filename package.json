@@ -1,7 +1,7 @@
 {
   "name": "react_template_2022",
   "version": "0.1.2",
-  "description": "ReactJS Template - ReactJS, Babel, ESLINT, Webpack, Styled-Components",
+  "description": "ReactJS Template - ReactJS, Babel, ESLINT, Webpack, Typescript, Styled-Components",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",

@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Header id='headerWrap' />
       <ColumnLayout 
-        headlineText='ReactJS Basic Template 2023'
+        headlineText='ReactJS TS Template 2023'
       />
       <Footer />
     </StyledApp>

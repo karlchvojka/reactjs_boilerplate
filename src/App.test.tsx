@@ -18,7 +18,7 @@ test('renders learn react link', () => {
   render(<App />)
 
   // Find the H1 Text in the component
-  const linkElement = screen.getByText(/ReactJS Basic Template 2023/i)
+  const linkElement = screen.getByText(/ReactJS TS Template 2023/i)
 
   // Assert the text exists
   expect(linkElement).toBeInTheDocument()
